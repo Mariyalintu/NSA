@@ -1,0 +1,17 @@
+read a
+echo "enter second number:"
+read b
+echo "enter third number:"
+read c
+if ((a+b > c && a+c > b && b+c > a))
+then
+   if [[ $((a*a)) -eq $((b*b + c*c)) || $((b*B)) -eq $((a*a + b*b)) || $((c*c)) -eq $((a*a + b*b)) ]]
+   then
+   echo "CAN form right angled triangle"
+   else
+   echo "CANNOT form right angled triangle"
+   fi
+else
+echo "sides cannot form triangle"
+fi
+~
